@@ -4,6 +4,8 @@
     padding: 0px;
 }
 
+
+/** The Navigation Bar Start**/
 header {
     display: flex;
     justify-content: space-between;
@@ -20,6 +22,14 @@ header {
 .nav-bar li  {
     display: inline-block;
     justify-content: space-evenly;
+
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
 }
 
 .containers-head {
@@ -27,22 +37,53 @@ header {
     align-items: center;
 }
 
+/*Slide in animation Left & Right */
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideInRight {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
 #name, #selfie {
     display: inline-block;
     justify-content: space-evenly;
+
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
 }
 
 #name {
     margin-left: 25px;
 }
 
+/* Head shot photo */
 #selfie {
     border-radius: 100%; 
     height: 60px;
     width: 65px;
     margin: auto;
+    border: solid 2px #000000;
 }
 
+/* Nav Selection */
 a {
     color: bisque; 
     padding: 30px;
