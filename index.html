@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <!--Navigation Bar/Image/Name-->
@@ -31,23 +32,35 @@
     </header>
 
     <!--Home section -->
-    <div></div>
     <div class="container-home">
-        <div class="profession">
-          <h1>Front Web Engineer</h1>
-          <p>Seeking a Front End Engineering role to apply and expand my skills in web development and user interface design. Eager to learn new technologies and collaborate with innovative teams to deliver exceptional digital experiences.</p>
-        </div>
-        <div class="fav-quote">
-            <blockquote> 
-                If you don't have time to do it right, whe will you have time to do it over?
-            </blockquote>
-            <img src="/resources/imgs/John Wooden.jpg" alt="John Wooden">
+        <div class="card-outer">
+            <div class="spinning-border"></div>
+            <div class="card-inner">
+                <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"
+                ></path>></svg>
+            
+                <div class="profession">
+                    <h1 id="job"><strong>Front-End Engineer</strong></h1>
+                    <h3 id="obj">Seeking a Front-End Engineering role to apply and expand my skills in web development and user interface design. <br>Eager to learn new technologies and collaborate with innovative teams to deliver exceptional digital experiences.</h3>
+                    <blockquote id="quote"> 
+                        Favorite Quote: <br><br>
+                        <em>If you don't have time to do it right, when will you have time to do it over?</em> <br><br>
+                        -John Wooden
+                    </blockquote>
+                </div>
+            </div>
         </div>
     </div>
 
-
-    
-    <div></div>
 </body>
 </html>
 

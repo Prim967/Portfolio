@@ -4,6 +4,9 @@
     padding: 0px;
 }
 
+body {
+    background-color: #CBCBCB;
+}
 
 /** The Navigation Bar Start**/
 header {
@@ -71,7 +74,7 @@ header {
 }
 
 #name {
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 /* Head shot photo */
@@ -93,4 +96,107 @@ a {
 
 a:hover {
     color: #C4EAFF;
+}
+
+
+/* Home Page */
+.container-home {
+    font-family: "Ubuntu", sans-serif;
+    display: block;
+    margin: 40px 20px;
+    display: flex;
+}
+
+.container-home .profession {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.profession {
+    align-items: center;
+    text-align: center;
+    padding: 300px 40px;
+    margin: 40px 40px;
+}
+
+#job, #obj, #quote {
+    margin: 50px;
+}
+
+#job {
+    font-size: 130px;
+    color: #000;
+    font-family: "Orbitron", sans-serif;
+    text-shadow: #Fff 1px 0 15px;
+    font-style: italic; 
+}
+
+#obj {
+    margin-top: 25px;
+    color:#fff;
+    font-size: 25px;
+}
+
+#quote {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* border */
+.card-outer {
+    background: #CBCBCB;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 3;
+    position: relative;
+    border-radius: 5%;
+}
+
+/* inner div background */
+.card-inner {
+    width: auto;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    z-index: 5;
+    background-color: #4A93B6;
+    border-radius: 5%;
+    background-image: linear-gradient(#FFE4C4,#332D27,#4A93B6);
+}
+
+/* svg spining icon */
+.spinning-border{
+    background: linear-gradient(
+    90deg, 
+    #000,
+    #575757
+    );
+    position: absolute;
+    z-index: 4;
+    inset: 0;
+
+    animation: spin 7s linear infinite;
+    scale: 1.56;
+}
+
+svg {
+    font-size: 36px;
+    color: #819BA8;
+    animation: spin 2s linear infinite;
+    visibility: hidden;
+}
+
+/*animation for spinning svg*/
+@keyframes spin {
+    from{
+        rotate: 360deg;
+    }
+    to {
+        rotate: 0deg;
+    }
 }
