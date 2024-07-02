@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #CBCBCB;
+    background-color: #fff;
 }
 
 /** The Navigation Bar Start**/
@@ -20,6 +20,12 @@ header {
     font-size: x-large;
     letter-spacing: 1px;
     background-image: linear-gradient(to right, #608599, #0C2533);
+}
+
+h3 {
+    font-size: 3rem;
+    color: #ffe4c4;
+    padding-bottom: 10px;
 }
 
 .nav-bar li  {
@@ -201,3 +207,105 @@ svg {
         rotate: 0deg;
     }
 }
+
+
+/* footer */ 
+footer {
+    margin-top: 100px;
+    height: 375px;
+    padding: 45px;
+    padding-left: 60px;
+}
+
+.footer-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    font-family: "Ubuntu", sans-serif;
+    background-image: linear-gradient(to right, #608599, #0C2533);
+    color: #fff;
+}
+
+.contact-section {
+    flex: 1 1 50%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.boxes-section {
+    flex: 1 1 50%; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+#box-1, #box-2 {
+    width: 48%; 
+    height: 120px; 
+    background-color: transparent; 
+    margin-top: 35px;
+}
+
+#box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+#connect {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fa {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  }
+  
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin::before {
+    font-size: 24px; 
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-facebook::before {
+    font-size: 24px; 
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-github::before {
+    font-size: 24px; 
+}
+
+.fa-github {
+    background: #0366d6;
+    color: white;
+  }
+
