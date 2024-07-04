@@ -6,6 +6,7 @@
 
 body {
     background-color: #fff;
+    font-family: "Ubuntu", sans-serif;
 }
 
 /** The Navigation Bar Start**/
@@ -16,7 +17,6 @@ header {
     padding: 30px;
     background-color: #553E1F;
     color: #ffe4c4;
-    font-family: "Ubuntu", sans-serif;
     font-size: x-large;
     letter-spacing: 1px;
     background-image: linear-gradient(to right, #608599, #0C2533);
@@ -81,6 +81,7 @@ h3 {
 
 #name {
     margin-left: 20px;
+    text-decoration: none;
 }
 
 /* Head shot photo */
@@ -107,7 +108,6 @@ a:hover {
 
 /* Home Page */
 .container-home {
-    font-family: "Ubuntu", sans-serif;
     display: block;
     margin: 40px 20px;
     display: flex;
@@ -308,4 +308,45 @@ footer {
     background: #0366d6;
     color: white;
   }
+
+/* Project Section */
+h2 {
+    font-size: 4rem;
+    text-decoration: underline #000;
+}
+
+#project-title {
+    margin: 40px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-height: 1200px;
+    overflow: hidden;
+    margin: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.projects {
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    padding: 0px;
+    align-items: center;
+    gap: 100px;
+    margin: 15px;
+}
+
+#calc {
+    height: 100%;
+    max-width: 100%;
+}
+
+.project-name {
+    color: #3D86AA;
+}
+
 
