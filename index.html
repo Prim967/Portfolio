@@ -24,7 +24,7 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#project-title">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -65,12 +65,12 @@
     <h2 id="project-title">Projects</h2>
     </div>
 
-    <div class="project-container"> 
+    <div id="project-container"> 
         <div class="projects">
             <div>
             <h3 class="project-name">Calculator</h3>
             <p class="project-description">
-                I utilized HTML, CSS, and JavaScript to develop this calculator from scratch. HTML provided the structure and layout of the calculator, defining its elements such as buttons and display areas. CSS was employed to style these elements, ensuring a visually appealing interface with precise positioning, colors, and fonts. JavaScript brought functionality to the calculator, enabling it to perform arithmetic operations, handle user inputs, and display results dynamically. Together, these technologies allowed me to create a responsive and user-friendly calculator that enhances the user experience through intuitive design and seamless functionality.</p>
+                I utilized HTML, CSS, and JavaScript to develop this calculator from scratch. HTML provided the structure and layout of the calculator, defining its elements such as buttons and display areas. CSS was employed to style these elements, ensuring a visually appealing interface with precise positioning, colors, and fonts. JavaScript brought functionality to the calculator, enabling it to perform arithmetic operations, handle user inputs, and display results dynamically. Together, these technologies allowed me to create a responsive and user-friendly calculator that enhances the user experience through intuitive design and seamless functionality. <br> <a id="code" href="https://github.com/Prim967/Calculator.git" target="_blank" rel="noopener">Code</a></p>
             </div>
             <div>
             <img id="calc" src="./resources/imgs/Calc.png" alt="Calculator">
@@ -88,8 +88,108 @@
             <img id="calc" src="./resources/imgs/blue background.jpg" alt="Weather App">
             </div>
         </div>
-
     </div>
+
+    <div>
+        <h2 id="about-title">About</h2>
+    </div>
+
+    <div id="about-container"> 
+      <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img class="about-img" src="./resources/imgs/ISU.jpg" alt="Indiana State University">
+                    </div>
+                    <div class="flip-back">
+                        <h3>Education</h3>
+                        <p>
+                        I hold a degree in Computer Engineering from Indiana State University, where I acquired a comprehensive understanding of both hardware and software aspects of computing. This academic program provided me with a strong foundation in computer systems, digital circuit design, programming languages, and algorithm development. Through coursework, projects, and hands-on experiences at Indiana State University, I developed critical thinking skills and the ability to solve complex technological challenges. My education at Indiana State University has prepared me to contribute effectively to the field of computer engineering, allowing me to apply my knowledge and skills to innovate and create impactful solutions in the ever-evolving technology industry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img class="about-img" src="./resources/imgs/R&D Beach.jpg" alt="Indiana State University">
+                    </div>
+                    <div class="flip-back">
+                        <h3>Life</h3>
+                        <p>
+                        This is my lovely, beautiful wife Rachel, and together we reside in Montana in a charming tiny house measuring 8 feet by 20 feet. Our compact yet cozy home reflects our minimalist lifestyle, where every corner is filled with warmth and love. Despite its size, our space in Montana offers us everything we need, fostering a sense of closeness and simplicity that enhances our bond. Rachel's creativity and my practicality come together harmoniously in our small abode, making it not just a place to live, but a haven where we build our dreams together every day.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img class="about-img" src="./resources//imgs/love_coding-wallpaper-1600x1200.jpg" alt="Indiana State University">
+                    </div>
+                    <div class="flip-back">
+                        <h3>Goals</h3>
+                        <p>
+                            I have a deep passion for computers that extends beyond mere fascination; it's a core part of who I am. Building and maintaining my own crypto mining rig, complete with powerful GPUs, has been a thrilling journey that combines my love for technology and my interest in cryptocurrencies. Now, I'm eager to expand my knowledge further by delving into Front-End Web Development. The prospect of creating visually appealing and functional websites excites me because it combines artistic design with technical prowess, offering endless opportunities for creativity and innovation in the digital realm. This new educational path not only aligns with my interests but also promises to enhance my skills in a rapidly evolving field that I'm deeply passionate about.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img class="about-img" src="./resources//imgs/skills.jfif" alt="Indiana State University">
+                    </div>
+                    <div class="flip-back">
+                        <h3>Skills</h3>
+                          <ul class="skills">
+                            <li>HTLM</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Automation(PLCs)</li>
+                            <li>Git</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div>
+        <h2>Guess My birthday!</h2>
+    </div>
+
+    <div class="birthday-container">
+        <div class="guess-box">
+            <div>
+            <div>
+                <p>Try and guess my birthday! Use the format below.   </p>
+            </div>
+            <div>
+                <form id="form">
+                <label for="birthday">YYYY-MM-DD</label>
+                <input type="text" id="birthday" name="birthday" required>
+                <button type="button">Guess!</button>
+                </form>
+                <h4 id="result"></h4>
+            </div>
+            </div>
+        </div>
+        <div class="guess-box">
+            <div class="hint-display">
+            <button id="hint1" type="button">Hint 1</button>
+            <h5 id="display-hint1"></h5>
+            </div>
+            <div class="hint-display">
+            <button id="hint2" type="button">Hint 2</button>
+            <h5 id="display-hint2"></h5>
+            </div>
+            <div class="hint-display">
+            <button id="hint3" type="button">Hint 3</button>
+            <h5 id="display-hint3"></h5>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer-container">
         <div class="foot-container contact-section"> 
@@ -106,6 +206,8 @@
             <div id="box-2"></div>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
 
