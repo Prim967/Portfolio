@@ -45,4 +45,3 @@ hint3.addEventListener('click', () => {
     displayHint3.innerHTML = "My birthday falls in the first half of September."
 }
 );
-

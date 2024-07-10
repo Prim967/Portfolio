@@ -45,6 +45,35 @@ h3 {
     animation-fill-mode: none;
 }
 
+@media screen and (max-width: 700px) {
+    header {
+        font-size: 20px;
+        padding: 0px 10px;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .containers-head {
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    #name {
+        font-size: 30px;
+        margin: 0;
+        text-align: center; 
+    }
+
+    #selfie {
+        margin: 0;
+    }
+
+    .nav-bar {
+        margin-top: 18px;
+        padding: 15px 0px;
+    }
+}
+
 .containers-head {
     display: flex;
     align-items: center;
@@ -84,7 +113,6 @@ h3 {
 }
 
 #name {
-    margin-left: 20px;
     text-decoration: none;
 }
 
@@ -127,8 +155,9 @@ a:hover {
 .profession {
     align-items: center;
     text-align: center;
-    padding: 300px 40px;
-    margin: 40px 40px;
+    padding: 10px 0px;
+    margin: 40px;
+    border:2px solid #007bb5;
 }
 
 #job, #obj, #quote {
@@ -154,6 +183,25 @@ a:hover {
     font-size: 20px;
 }
 
+@media screen and (max-width: 700px) {
+   .profession {
+    padding: 0px;
+   }
+   
+    #job {
+        font-size: 55px;
+    }
+
+    #obj {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #quote {
+        font-size: 15px;
+    }
+    
+}
 
 /* border */
 .card-outer {
@@ -216,36 +264,35 @@ svg {
 /* footer */ 
 footer {
     margin-top: 0px;
-    height: 375px;
+    height: auto;
     padding: 45px;
     padding-left: 60px;
 }
 
 .footer-container {
-    display: flex; 
-    flex-wrap: wrap; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
     font-family: "Ubuntu", sans-serif;
     background-image: linear-gradient(to right, #608599, #0C2533);
     color: #fff;
 }
 
 .contact-section {
-    flex: 1 1 50%; 
+    flex: 1 1 100%; 
     padding: 20px; 
     box-sizing: border-box; 
 }
 
 .boxes-section {
-    flex: 1 1 50%; 
-    display: flex; 
-    justify-content: space-between; 
     padding: 20px; 
     box-sizing: border-box; 
 }
 
 #box-1, #box-2 {
     width: 48%; 
-    height: 120px; 
+    height: auto; 
     background-color: transparent; 
     margin-top: 35px;
 }
@@ -313,6 +360,12 @@ footer {
     color: white;
   }
 
+@media screen and (max-width:700px) {
+    .footer-container {
+    grid-template-columns: 1fr; 
+    }
+}
+
 /* Project Section */
 h2 {
     font-size: 4rem;
@@ -327,7 +380,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    max-height: 1200px;
     overflow: hidden;
     margin: 40px;
     font-weight: 500;
@@ -362,6 +414,21 @@ h2 {
     color: hsl(229, 79%, 60%)
 }
 
+@media screen and (max-width: 700px) {
+    #project-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        height: auto;
+    }
+
+    .projects {
+        margin: 0px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 /*about container*/
 #about-container {
     display: grid; 
@@ -369,7 +436,7 @@ h2 {
     grid-template-rows: auto;
     gap: 10px;
     width: 100%;
-    height: 80%;
+    height: auto;
     justify-content: space-between;
     align-items: center;
     text-align: center; 
@@ -436,7 +503,16 @@ h2 {
     list-style-type: none;
 }
 
+@media screen and (max-width: 700px) {
+    #about-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+}
 
+
+/* Birthday Guesser */
 .birthday-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -451,6 +527,10 @@ h2 {
 
 .hint-display {
     margin: 50px;
+}
+
+#birthday-title {
+    padding: 10px 50px; 
 }
 
 #hint1, #hint2, #hint3 {
@@ -468,4 +548,11 @@ h2 {
 #guess-stack {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 700px) {
+    .birthday-container{
+    grid-template-columns: 1fr;
+    }
+
 }
